@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.5">
+  <display-name>FlyHigh</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>The servers return information on the flights available from source to destination airport</description>
+    <display-name>DisplayOptions</display-name>
+    <servlet-name>DisplayOptions</servlet-name>
+    <servlet-class>com.flyhigh.DisplayOptions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayOptions</servlet-name>
+    <url-pattern>/DisplayOptions</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Stores the user information and fight experience</description>
+    <display-name>StoreInfo</display-name>
+    <servlet-name>StoreInfo</servlet-name>
+    <servlet-class>com.flyhigh.StoreInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreInfo</servlet-name>
+    <url-pattern>/StoreInfo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DisplayForm</display-name>
+    <servlet-name>DisplayForm</servlet-name>
+    <servlet-class>com.flyhigh.DisplayForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayForm</servlet-name>
+    <url-pattern>/DisplayForm</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RetrieveInfo</display-name>
+    <servlet-name>RetrieveInfo</servlet-name>
+    <servlet-class>com.flyhigh.RetrieveInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RetrieveInfo</servlet-name>
+    <url-pattern>/RetrieveInfo</url-pattern>
+  </servlet-mapping>
+</web-app>
