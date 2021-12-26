@@ -1,5 +1,5 @@
 # Fly-High
-Fly High is an airline ticket booking website made with HTML, JSP, Servlets and Tailwind CSS. It provides user the option to book the ticket, download it and lists details of various international airports around the world.
+Fly High is an airline ticket booking website made with HTML, JSP, Servlets and Tailwind CSS. It provides user the option to book a ticket, download it and lists details of various international airports around the world.
 
 # Database
 We used the MySQL database. The data for the database was collected from https://www.openflights.org/data.html under the Open Database liscence. The relational schema for the database is
